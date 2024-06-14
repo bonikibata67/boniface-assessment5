@@ -1,0 +1,27 @@
+GET http://localhost:4000/products
+
+
+######
+POST http://localhost:4000/products/add
+
+Content-Type:application/json
+
+{
+    "Name":"computer",
+    "Price":"2000"
+}
+
+######
+GET http://localhost:4000/products/Id/5f86493d-2528-4487-b6b0-11156da7966c
+
+
+######
+GET http://localhost:4000/products/paginatedproducts?page=1&limit=5
+
+
+######
+GET http://localhost:4000/products/filter
+
+
+
+

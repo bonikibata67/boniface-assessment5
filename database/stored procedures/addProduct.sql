@@ -1,0 +1,11 @@
+USE Assessment;
+GO
+
+
+CREATE OR ALTER PROCEDURE addProduct(@Id VARCHAR(255),@Name VARCHAR(255),@Price VARCHAR(255))
+AS
+BEGIN
+
+INSERT INTO PRODUCTS(Id,Name,Price)
+VALUES(@Id, @Name, @Price)
+END;
